@@ -12,7 +12,7 @@
 		6A674EF3240781A0004F2DDD /* libGLEW.2.1.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 6A674EF2240781A0004F2DDD /* libGLEW.2.1.0.dylib */; };
 		6A674EF5240781C6004F2DDD /* libglfw.3.3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 6A674EF4240781C6004F2DDD /* libglfw.3.3.dylib */; };
 		6A674EF92407821E004F2DDD /* glad.c in Sources */ = {isa = PBXBuildFile; fileRef = 6A674EF82407821E004F2DDD /* glad.c */; };
-		6AC7F2A62407B5B200F0815D /* init.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6AC7F2A42407B5B200F0815D /* init.cpp */; };
+		6ACF5609240AF6A100A09DA2 /* init.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6ACF5607240AF6A100A09DA2 /* init.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -35,7 +35,12 @@
 		6A674EF2240781A0004F2DDD /* libGLEW.2.1.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libGLEW.2.1.0.dylib; path = ../../../../../../../usr/local/Cellar/glew/2.1.0_1/lib/libGLEW.2.1.0.dylib; sourceTree = "<group>"; };
 		6A674EF4240781C6004F2DDD /* libglfw.3.3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libglfw.3.3.dylib; path = ../../../../../../../usr/local/Cellar/glfw/3.3.2/lib/libglfw.3.3.dylib; sourceTree = "<group>"; };
 		6A674EF82407821E004F2DDD /* glad.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = glad.c; sourceTree = "<group>"; };
-		6AC7F2A42407B5B200F0815D /* init.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = init.cpp; sourceTree = "<group>"; };
+		6AB8F72824107190006F2C9B /* light_frag */ = {isa = PBXFileReference; lastKnownFileType = text; path = light_frag; sourceTree = "<group>"; };
+		6AB8F729241072B1006F2C9B /* light_vertex */ = {isa = PBXFileReference; lastKnownFileType = text; path = light_vertex; sourceTree = "<group>"; };
+		6AB9722B240ADF5F00115DF9 /* vertex */ = {isa = PBXFileReference; lastKnownFileType = text; path = vertex; sourceTree = "<group>"; };
+		6AB9722C240ADF9D00115DF9 /* fragment */ = {isa = PBXFileReference; lastKnownFileType = text; path = fragment; sourceTree = "<group>"; };
+		6ACF5607240AF6A100A09DA2 /* init.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = init.cpp; sourceTree = "<group>"; };
+		6ACF560A240AF9B700A09DA2 /* Shader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Shader.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,7 +79,12 @@
 			children = (
 				6A674EF82407821E004F2DDD /* glad.c */,
 				6A674EE824077E39004F2DDD /* main.cpp */,
-				6AC7F2A42407B5B200F0815D /* init.cpp */,
+				6AB9722B240ADF5F00115DF9 /* vertex */,
+				6AB9722C240ADF9D00115DF9 /* fragment */,
+				6ACF5607240AF6A100A09DA2 /* init.cpp */,
+				6ACF560A240AF9B700A09DA2 /* Shader.h */,
+				6AB8F72824107190006F2C9B /* light_frag */,
+				6AB8F729241072B1006F2C9B /* light_vertex */,
 			);
 			path = "CS230-RigidBodySimulation";
 			sourceTree = "<group>";
@@ -147,8 +157,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				6A674EE924077E39004F2DDD /* main.cpp in Sources */,
+				6ACF5609240AF6A100A09DA2 /* init.cpp in Sources */,
 				6A674EF92407821E004F2DDD /* glad.c in Sources */,
-				6AC7F2A62407B5B200F0815D /* init.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -251,6 +261,7 @@
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = "";
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
 				GCC_WARN_UNDECLARED_SELECTOR = YES;
