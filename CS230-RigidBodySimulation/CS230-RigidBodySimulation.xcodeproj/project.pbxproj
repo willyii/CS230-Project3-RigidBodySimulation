@@ -12,7 +12,9 @@
 		6A674EF3240781A0004F2DDD /* libGLEW.2.1.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 6A674EF2240781A0004F2DDD /* libGLEW.2.1.0.dylib */; };
 		6A674EF5240781C6004F2DDD /* libglfw.3.3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 6A674EF4240781C6004F2DDD /* libglfw.3.3.dylib */; };
 		6A674EF92407821E004F2DDD /* glad.c in Sources */ = {isa = PBXBuildFile; fileRef = 6A674EF82407821E004F2DDD /* glad.c */; };
+		6A8D6E2E241463AE00167679 /* Sphere.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6A8D6E2C241463AE00167679 /* Sphere.cpp */; };
 		6ACF5609240AF6A100A09DA2 /* init.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6ACF5607240AF6A100A09DA2 /* init.cpp */; };
+		6AF67C7E24185C6800D1591B /* Plane.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6AF67C7C24185C6800D1591B /* Plane.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -35,12 +37,15 @@
 		6A674EF2240781A0004F2DDD /* libGLEW.2.1.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libGLEW.2.1.0.dylib; path = ../../../../../../../usr/local/Cellar/glew/2.1.0_1/lib/libGLEW.2.1.0.dylib; sourceTree = "<group>"; };
 		6A674EF4240781C6004F2DDD /* libglfw.3.3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libglfw.3.3.dylib; path = ../../../../../../../usr/local/Cellar/glfw/3.3.2/lib/libglfw.3.3.dylib; sourceTree = "<group>"; };
 		6A674EF82407821E004F2DDD /* glad.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = glad.c; sourceTree = "<group>"; };
-		6AB8F72824107190006F2C9B /* light_frag */ = {isa = PBXFileReference; lastKnownFileType = text; path = light_frag; sourceTree = "<group>"; };
-		6AB8F729241072B1006F2C9B /* light_vertex */ = {isa = PBXFileReference; lastKnownFileType = text; path = light_vertex; sourceTree = "<group>"; };
+		6A8D6E2C241463AE00167679 /* Sphere.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Sphere.cpp; sourceTree = "<group>"; };
+		6A8D6E2D241463AE00167679 /* Sphere.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Sphere.h; sourceTree = "<group>"; };
 		6AB9722B240ADF5F00115DF9 /* vertex */ = {isa = PBXFileReference; lastKnownFileType = text; path = vertex; sourceTree = "<group>"; };
 		6AB9722C240ADF9D00115DF9 /* fragment */ = {isa = PBXFileReference; lastKnownFileType = text; path = fragment; sourceTree = "<group>"; };
+		6AC1CFB7241965C300FA86B9 /* Object.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Object.h; sourceTree = "<group>"; };
 		6ACF5607240AF6A100A09DA2 /* init.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = init.cpp; sourceTree = "<group>"; };
 		6ACF560A240AF9B700A09DA2 /* Shader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Shader.h; sourceTree = "<group>"; };
+		6AF67C7C24185C6800D1591B /* Plane.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Plane.cpp; sourceTree = "<group>"; };
+		6AF67C7D24185C6800D1591B /* Plane.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Plane.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,8 +88,11 @@
 				6AB9722C240ADF9D00115DF9 /* fragment */,
 				6ACF5607240AF6A100A09DA2 /* init.cpp */,
 				6ACF560A240AF9B700A09DA2 /* Shader.h */,
-				6AB8F72824107190006F2C9B /* light_frag */,
-				6AB8F729241072B1006F2C9B /* light_vertex */,
+				6A8D6E2C241463AE00167679 /* Sphere.cpp */,
+				6A8D6E2D241463AE00167679 /* Sphere.h */,
+				6AF67C7C24185C6800D1591B /* Plane.cpp */,
+				6AF67C7D24185C6800D1591B /* Plane.h */,
+				6AC1CFB7241965C300FA86B9 /* Object.h */,
 			);
 			path = "CS230-RigidBodySimulation";
 			sourceTree = "<group>";
@@ -158,6 +166,8 @@
 			files = (
 				6A674EE924077E39004F2DDD /* main.cpp in Sources */,
 				6ACF5609240AF6A100A09DA2 /* init.cpp in Sources */,
+				6AF67C7E24185C6800D1591B /* Plane.cpp in Sources */,
+				6A8D6E2E241463AE00167679 /* Sphere.cpp in Sources */,
 				6A674EF92407821E004F2DDD /* glad.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
