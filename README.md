@@ -12,7 +12,7 @@ For more detail, pls see our [Report](docs/Report.pdf) and [Slide](docs/Slides.p
 
 ## Usage
 
-Before running this project, pelease make sure (OpenGL)[https://www.opengl.org//] already installed in your machine. And use Xcode (Mac only)
+Before running this project, pelease make sure [OpenGL](https://www.opengl.org//) already installed in your machine. And use Xcode (Mac only)
 to open this project and run the main.cpp
 
 
