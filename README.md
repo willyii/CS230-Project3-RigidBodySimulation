@@ -1,6 +1,6 @@
 # CS230-Project3-RigidBodySimulation
 
-This is course project for CS230 Computer Graphic. We achieved a simple rigid body simulation program based on C++ and OpenGL. 
+This is course project for CS230 Computer Graphic at UCR. We achieved a simple rigid body simulation program based on C++ and OpenGL. 
 
 Here are some demos for our project:
 
@@ -15,5 +15,8 @@ For more detail, pls see our [Report](docs/Report.pdf) and [Slide](docs/Slides.p
 Before running this project, pelease make sure [OpenGL](https://www.opengl.org//) already installed in your machine. And use Xcode (Mac only)
 to open this project and run the main.cpp
 
+## Reference 
 
+1. [Nonconvex Rigid Bodies with Stacking](http://physbam.stanford.edu/~fedkiw/papers/stanford2003-01.pdf)
+2. [Rigid Body Simulaton](http://www-cs-students.stanford.edu/~dalewis/cs448a/rigidbody.html)
 
